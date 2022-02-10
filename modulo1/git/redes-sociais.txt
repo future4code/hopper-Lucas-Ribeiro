@@ -1,3 +1,6 @@
 facebook
 instagram
+discord
+whatsapp
+telegram
 linkedin
