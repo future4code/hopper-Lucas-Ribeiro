@@ -25,18 +25,14 @@ function informacoesUsuario(){
 
 //b
 
-let nomeUsr = "Lucas"
-let idadeUsr = Number(37)
-let cidadeUsr = "Porto Alegre"
-let profiUsr = "Jornalista"
 
 function infoUsuario(nome,idade,cidade,profissao){
 
-    console.log ("Eu so", nome, "tenho", idade, "anos", "moro em", cidade, "e sou", profissao)  
-
+    let infos = (`Eu so ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}`)  
+    return infos
 
 }
-    infoUsuario(nomeUsr, idadeUsr, cidadeUsr, profiUsr)
+    console.log(infoUsuario("Lucas", "37", "Porto Alegre", "Jornalista"))
 
 //2
 //a
@@ -49,19 +45,21 @@ function somarNumeros(numero, outroNumero){
 //b
 function compararNumeros(numero, outroNumero){
 
-    console.log(numero >= outroNumero)
+    let compara = numero >= outroNumero
+    return compara
 
 }
-    compararNumeros(8, 9)
+    console.log(compararNumeros(8, 9))
 //c
 function consultapar(num){
 
-    console.log(num % 2)
+    let par = num % 2
+    return par
 }
-    consultapar(4)
+    console.log(consultapar(4))
 
 //d
-let texto = prompt()
+let texto = prompt("insira um texto")
 function mensagem(inserir){
 
 
@@ -73,8 +71,8 @@ function mensagem(inserir){
     mensagem(texto)
 //3
 
-let num1 = prompt(Number())
-let num2 = prompt(Number())
+let num1 = prompt("insira um número")
+let num2 = prompt("insira outro número")
 
 function operacoesBasicas(numeroUm,numeroDois){
 
