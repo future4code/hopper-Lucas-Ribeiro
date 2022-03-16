@@ -1,0 +1,29 @@
+7 passos para resolução de problemas.
+
+1. Ler bem o enunciado.
+Consiste em compreender o que o enunciado pede para o código fazer.
+Pegar as informações únicas que serão necessárias para criar o código
+
+2. Retirar informações relevantes.
+
+Pegar as informações que serão usadas para serem armazenadas no código.
+
+3. Pensar entradas e saídas.
+
+Pensar nos dados que iremos receber e o que o enunciado pede que seja a saída.
+
+4. Fazer um esquema visual.
+
+Montar diagramas com a lógica do código. 
+
+5. Criar um código feio.
+
+Criar um código simples que seja fácil de compeender a lógica.
+
+6. Testar.
+
+Testar com dados e ver se o código está executando o que foi proposto
+
+7. Refatorar.
+
+Dar bom nomes as funções, separar as funções de cada elemento, ver se há maneiras melhores de executar o código.
