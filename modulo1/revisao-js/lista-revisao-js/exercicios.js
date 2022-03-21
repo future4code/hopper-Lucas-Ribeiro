@@ -121,24 +121,16 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
     let novoArray = []
-    let maior = Math.max(...array)
-    let menor = Math.min(...array)
-    let segundoMaior
-    let segundoMenor
 
-    array.splice(array.indexOf(maior))
-    segundoMaior = Math.max(...array)
-    novoArray.push(segundoMaior)
-
-    for(let i = 0; i > menor; i ++){
-        if(i < maior){
-            segundoMenor = i
-            }
-    }novoArray.push(segundoMenor)
-   
-
-    return novoArray
+    let ordenaMaiorMenor = array.sort(function(a, b){
+        return b - a; 
+        
+    })
     
+    novoArray.push(ordenaMaiorMenor[1])
+    ordenaMaiorMenor.reverse()
+    novoArray.push(ordenaMaiorMenor[1])
+    return novoArray
 
 }
 
@@ -189,10 +181,24 @@ function retornaContasComSaldoAtualizado(contas) {
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
+    function SortArray(x, y){
+        if (x.nome < y.nome) 
+        {return -1;}
+        if (x.nome > y.nome) 
+        {return 1;}
+        return 0;
+    }
+    let nomesOrdenados = consultas.sort(SortArray);
+    return nomesOrdenados
   
 }
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-   
+    
+    function ordenar(a,b) {
+        return a.dataDaConsulta - b.dataDaConsulta;
+      }
+      
+      return consultas.sort(ordenar)
 }
