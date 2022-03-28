@@ -1,0 +1,39 @@
+ h1 {
+
+    background-color: orange;
+    padding-left: 600px;
+    padding-bottom: 40px;
+    height: 30px;
+
+}
+
+.fundo-azulado{
+    background-color: blue;
+    color: white;
+}
+
+.fundo-azul{
+
+    background-color: rgba(45, 130, 209, 0.671);
+}
+
+.fundo-verde{
+    background-color: rgb(107, 243, 107);
+}
+
+.fundo-vermelho{
+
+    background-color: rgb(212, 61, 61);
+}
+
+.fundo-amarelo{
+
+    background-color: rgb(177, 177, 63);
+}
+
+.fundo-rodape{
+
+    background-color: chartreuse;
+    margin-top: 600px;
+    padding-left: 550px;
+}
