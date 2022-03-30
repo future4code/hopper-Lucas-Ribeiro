@@ -20,6 +20,8 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border: none;
+    border-bottom: 3px solid #000;
 }
 
 button:focus {
@@ -101,8 +103,10 @@ div:last-child {
 }
 
 table {
+    position: relative;
     width: 60%;
     text-align: center
+    
 
 }
 
