@@ -22,6 +22,10 @@
     font-size: 4vw;
 }
 
+.title-video{
+
+    font-size: 100%;
+}
 
 .search{
 
@@ -42,6 +46,7 @@
 
 .videos{
 
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -54,9 +59,9 @@
 
 .video{
 
-    width: 360px;
-    height: 300px;
-    margin: 5px 5px 5px 5px;
+    width: 25vw;
+    height: 30vh;
+    margin: 5vw 5vw 5vw 5vw;
    
 }
 
@@ -83,3 +88,11 @@
     align-items: center;
     font-size: 1vw;
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .videos{
+
+        flex-direction: column;
+    }
+    }
+    
