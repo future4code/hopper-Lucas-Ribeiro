@@ -1,14 +1,32 @@
-import './App.css';
-import IntegracaoApi from './integracaoApi.js'
+
+import React from 'React';
+import IntegracaoApi from './components/integracaoApi.js';
+import telaLista from './components/telaLista.js';
+
 
     
-function App() {
-  return (
-    <div className="App">
-      <p></p>
-      <IntegracaoApi></IntegracaoApi>
-    </div>
-  );
-}
+export default class App extends React.Component() {
 
-export default App;
+  state = {
+    paginaAtual: "cadastro"
+
+  };
+
+  trocarPagina =()=>{
+    if(this.state.paginaAtual === "cadastro"){
+      this.setState({paginaAtual: "listaUsuario"})
+    }else{
+      this.setState({paginaAtual: "cadastro"})
+
+    }
+  }
+
+  render(){
+    return(
+      <div>
+        <button onClick={this.trocarPagina}>Trocar de tela</button>
+        {this.state.paginaAtual === "cadastro" ? <IntegracaoApi /> : <telaLista />}
+      </div>
+    )
+  }
+}

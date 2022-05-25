@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import styled from "styled-components";
 
 
 
@@ -71,7 +72,6 @@ class IntegracaoApi extends React.Component {
                 <input value = {this.state.inputNome} onChange = {this.onchangeInputNome} placeholder="nome"/>
                 <input value = {this.state.inputEmail} onChange = {this.onchangeInputEmail} placeholder="email"/>
                 <button onClick={this.pegarDados}>Criar Ususário</button>
-                <button>Trocar tela</button>
                 <div>
                     {list}
                 </div>
