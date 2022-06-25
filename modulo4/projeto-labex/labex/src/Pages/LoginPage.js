@@ -1,7 +1,12 @@
+import React from "react";
+
 const LoginPage = () => {
     return (
       <>
-        <h1>LoginPage</h1>
+        <p>Email</p>
+        <imput/>
+        <p>Senha</p>
+        <imput/>
       </>
     );
   };

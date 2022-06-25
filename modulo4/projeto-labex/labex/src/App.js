@@ -1,33 +1,19 @@
-import React from "react";
-import styled from "styled-components";
-import axios from "axios";
-
-const Principal = styled.div`
-
-display: flex;
-align-items: center;
-flex-direction: column;
-padding-top: 20%;
-
-
-`
-const BotaoLista = styled.button`
-  display: flex;
-  margin-top: 2%;
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import AdminHomePage from "./Pages/AdminHomePage";
+import LoginPage from "./Pages/LoginPage";
 
 
 
-`
-
-
-function App() {
-  return (
-    <Principal>
-      <button>Login:</button>
-
-      <BotaoLista>Lista de viagens</BotaoLista>
-    </Principal>
-  );
-}
-
-export default App;
+function App( ) {
+    return (
+    <BrowserRouter>
+    <Routes>
+    <Route path={"/Pages"} element={<HomePage />} />
+    <Route path={"/Pages"} element={<AdminHomePage />} />
+    <Route path={"/Pages"} element={<LoginPage/>}/>
+    </Routes>
+    </BrowserRouter>
+    );
+   }
+   
